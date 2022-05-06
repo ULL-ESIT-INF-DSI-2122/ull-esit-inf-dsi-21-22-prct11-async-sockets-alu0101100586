@@ -25,23 +25,42 @@ describe('Class Notes Tests', () => {
     expect(note_test.getColor()).to.be.eql('amarillo');
   });
 
-  it('Printable Title', () => {
+  it('Printable Title Yellow', () => {
     expect(note_test.printableHead()).to.be.eql(chalk.yellow('Prueba 1'));
+  });
+
+  it('Printable Title Blue', () => {
     note_test.setColor('azul');
     expect(note_test.printableHead()).to.be.eql(chalk.blue('Prueba 1'));
+  });
+
+  it('Printable Title Green', () => {
     note_test.setColor('verde');
     expect(note_test.printableHead()).to.be.eql(chalk.green('Prueba 1'));
+  });
+
+  it('Printable Title Red or Default', () => {
     note_test.setColor('rojo');
     expect(note_test.printableHead()).to.be.eql(chalk.red('Prueba 1'));
   });
 
-  it('Printable Text', () => {
-    expect(note_test.printableHead()).to.be.eql(chalk.red('Prueba 1'));
-    note_test.setColor('azul');
-    expect(note_test.printableHead()).to.be.eql(chalk.blue('Prueba 1'));
-    note_test.setColor('verde');
-    expect(note_test.printableHead()).to.be.eql(chalk.green('Prueba 1'));
+  it('Printable Text Yellow', () => {
     note_test.setColor('amarillo');
-    expect(note_test.printableHead()).to.be.eql(chalk.yellow('Prueba 1'));
+    expect(note_test.printableText()).to.be.eql(chalk.yellow('Nota de prueba 1'));
+  });
+
+  it('Printable Text Blue', () => {
+    note_test.setColor('azul');
+    expect(note_test.printableText()).to.be.eql(chalk.blue('Nota de prueba 1'));
+  });
+
+  it('Printable Text Green', () => {
+    note_test.setColor('verde');
+    expect(note_test.printableText()).to.be.eql(chalk.green('Nota de prueba 1'));
+  });
+
+  it('Printable Text Red or Default', () => {
+    note_test.setColor('rojo');
+    expect(note_test.printableText()).to.be.eql(chalk.red('Nota de prueba 1'));
   });
 });
