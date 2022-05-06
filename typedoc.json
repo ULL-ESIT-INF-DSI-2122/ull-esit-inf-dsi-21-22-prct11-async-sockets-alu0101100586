@@ -1,6 +1,11 @@
 {
   "entryPoints": [
-    "./src/classes/notes.ts"
+    "./src/classes/notes.ts",
+    "./src/classes/gestor.ts",
+    "./src/classes/event.ts",
+    "./src/client/client.ts",
+    "./src/server/server.ts",
+    "./src/types/types.ts"
   ],
   "out": "./docs"
 }
