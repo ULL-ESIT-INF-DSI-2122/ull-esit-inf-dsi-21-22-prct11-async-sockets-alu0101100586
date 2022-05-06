@@ -7,7 +7,7 @@
     "coverage": "nyc npm test && nyc report --reporter=lcov",
     "doc": "typedoc",
     "test": "mocha",
-    "start": "tsc-watch --onSuccess \"node dist/classes/notes.js\""
+    "start": "tsc-watch --onSuccess \"node dist/server/server.js\""
   },
   "keywords": [],
   "author": "",
