@@ -65,6 +65,7 @@ export class Notes {
   /**
    * Imprime por pantalla el titulo de la nota dependiendo del color. Para el color 
    * rojo o alguno que no sea especificado, se imprimirá siempre en rojo
+   * @return string
    */
   printableHead(): string {
     let head: string = '';
@@ -91,6 +92,7 @@ export class Notes {
   /**
    * Imprime por pantalla el texto de la nota dependiendo del color. Para el color 
    * rojo o alguno que no sea especificado, se imprimirá siempre en rojo
+   * @return string
    */
   printableText(): string {
     let text: string = '';

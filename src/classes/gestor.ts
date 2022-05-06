@@ -22,6 +22,7 @@ export class Gestor {
    * se añadirá la nota
    * @param note Objeto de tipo nota que debemos añadir
    * @param user usuario que ha creado la nota
+   * @return string
    */
   add(note: Notes, user: string): string {
     let state: string = '';
@@ -50,6 +51,7 @@ export class Gestor {
    * la nueva informacion
    * @param note 
    * @param user 
+   * @return string
    */
   modify(note: Notes, user: string): string {
     let state: string = '';
@@ -74,6 +76,7 @@ export class Gestor {
    * directorio y fichero
    * @param note 
    * @param user 
+   * @return string
    */
   remove(note_title: string, user: string): string {
     let state: string = '';
@@ -93,6 +96,7 @@ export class Gestor {
   /**
    * Lista los titulos de las notas del usuario en concreto
    * @param user
+   * @return string
    */
   listHeads(user: string): string {
     let state: string = '';
@@ -114,6 +118,7 @@ export class Gestor {
    * Funcion que lee una nota en concreto de un usuario en concreto
    * @param note_title 
    * @param user 
+   * @return string
    */
   read(note_title: string, user: string): string {
     let state: string = '';
