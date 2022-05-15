@@ -7,7 +7,7 @@
     "coverage": "nyc npm test && nyc report --reporter=lcov",
     "doc": "typedoc",
     "test": "mocha",
-    "start": "tsc-watch --onSuccess \"node dist/PE102-09-05/server_express.js\""
+    "start": "tsc-watch --onSuccess \"node dist/PE102-16-05/index.js\""
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "@types/chai": "^4.3.1",
     "@types/express": "^4.17.13",
     "@types/mocha": "^9.1.1",
+    "@types/mongodb": "^3.6.20",
     "@types/node": "^17.0.31",
     "@types/request": "^2.48.8",
     "@types/yargs": "^17.0.10",
@@ -30,6 +31,9 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "express": "^4.18.1",
+    "mongodb": "^3.7.3",
+    "mongoose": "^5.13.14",
+    "node": "^16.14.0",
     "request": "^2.88.2",
     "yargs": "^17.4.1"
   }
